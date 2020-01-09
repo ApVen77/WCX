@@ -1,0 +1,108 @@
+body {
+    background-image: url("https://www.washingtonpost.com/resizer/3kBPq2bmVgo5D6a80rsGd85_2PA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/A724RBEN2AI6PHCTNILJX2YJKM.jpg");
+    background-color: gold;
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+   
+}
+
+.container {
+    color: black;
+}
+
+img {
+    height: 100px;
+    float: right;
+    background-blend-mode: screen;
+    opacity: 0.6;
+}
+
+footer {
+    height: 0px;
+
+    position: sticky;
+}
+
+footer p {
+
+    font-size: 20px;
+}
+
+input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: fixed;
+  }
+  label {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 10px;
+    margin: 40px;
+  }
+  
+  label span {
+    display: block;
+    width: 100%;
+    background: black;
+    height: 2px;
+    transition: transform 1s;
+  }
+  
+  label span::before,
+  label span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 5px;
+    background: black;
+    transition: 0.4s
+  }
+  
+  label span::before {
+    top: 0;
+  }
+  
+  label span::after {
+    top: calc(100% - 2px); /* to make the transition easier :) */
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    transition: transform 0.2s;
+    background: rgb(252, 250, 250);
+    background-image:("assets/images/WCX LOGO.png");
+    font-size: 25px;
+    list-style: none;
+    margin-top: 480px;
+    margin-top: 20px;
+  }
+  input:checked + label span {
+    transform: rotate(45deg);
+  }
+  
+  input:checked + label span::before, input:checked + label span::after {
+    top: calc(50% - 1px);
+    transition: 0.4s;
+  }
+  input:checked + label span::after {
+    transform: rotate(90deg);
+  }
+  input:checked ~ ul {
+    transform: none;
+    transition: transform 0.4s; 
+  }
+
