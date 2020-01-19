@@ -1,6 +1,5 @@
 body {
     background-image: url("https://www.washingtonpost.com/resizer/3kBPq2bmVgo5D6a80rsGd85_2PA=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/A724RBEN2AI6PHCTNILJX2YJKM.jpg");
-    background-color: gold;
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -9,6 +8,11 @@ body {
 h1 {
     color: black;
     font-family: 'Josefin Sans', cursive;
+}
+
+p { color: black;
+    font-family: 'Josefin Sans', cursive;
+
 }
 .container {
     color: black;
@@ -30,8 +34,13 @@ box:hover {
 }
 
 footer {
-    height: 0px;
+    
     position: sticky;
+}
+
+.icons {
+    margin-top: 100px;
+    float: right;
 }
     .fa-facebook {
         background: #3B5998;
@@ -138,7 +147,7 @@ input {
     bottom: 0;
     transform: translateX(100vw);
     transition: transform 0.2s;
-    background: rgb(92, 195, 236);
+    background: rgb(1, 5, 253);
     background-image:("assets/images/WCX LOGO.png");
     font-size: 25px;
     list-style: none;
